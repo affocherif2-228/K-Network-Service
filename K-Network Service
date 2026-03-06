@@ -1,0 +1,114 @@
+<!DOCTYPE html><html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>K-Network Service</title>
+<style>
+body{font-family:Arial, Helvetica, sans-serif;margin:0;background:#f4f6fb;color:#333}
+header{background:#0a4cff;color:white;padding:25px;text-align:center}
+header h1{margin:0}
+nav{background:#062c9c;display:flex;justify-content:center;gap:25px;padding:12px;flex-wrap:wrap}
+nav a{color:white;text-decoration:none;font-weight:bold}
+nav a:hover{opacity:0.8}
+section{padding:50px 20px;max-width:1100px;margin:auto}
+.hero{background:#e8edff;border-radius:12px;padding:40px;text-align:center}
+.hero h2{margin-top:0}
+.services{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:25px;margin-top:30px}
+.card{background:white;border-radius:12px;padding:25px;box-shadow:0 4px 10px rgba(0,0,0,0.08);text-align:center}
+.card h3{margin-top:0}
+.about{background:white;border-radius:12px;padding:30px;box-shadow:0 4px 10px rgba(0,0,0,0.08)}
+.contact-box{background:white;border-radius:12px;padding:30px;box-shadow:0 4px 10px rgba(0,0,0,0.08)}
+form{display:flex;flex-direction:column;gap:12px;margin-top:15px}
+input,textarea{padding:10px;border-radius:6px;border:1px solid #ccc;font-size:14px}
+button{background:#0a4cff;color:white;border:none;padding:12px;border-radius:8px;font-size:15px;cursor:pointer}
+button:hover{opacity:0.9}
+.whatsapp{position:fixed;bottom:20px;right:20px;background:#25D366;color:white;padding:14px 18px;border-radius:50px;text-decoration:none;font-weight:bold;box-shadow:0 4px 10px rgba(0,0,0,0.2)}
+footer{background:#0a4cff;color:white;text-align:center;padding:25px;margin-top:50px}
+</style>
+</head><body><header>
+<h1>K-Network Service</h1>
+<p>Installation Wi‑Fi | Maintenance Réseau | Réparation Informatique</p>
+</header><nav>
+<a href="#home">Accueil</a>
+<a href="#services">Services</a>
+<a href="#about">À propos</a>
+<a href="#contact">Contact</a>
+</nav><section id="home">
+<div class="hero">
+<h2>Bienvenue chez K‑Network Service</h2>
+<p>Nous sommes spécialisés dans la maintenance informatique, l'installation de réseaux Wi‑Fi et la configuration des équipements réseau.</p>
+<p><strong>Service rapide • Travail sécurisé • Satisfaction garantie</strong></p>
+</div>
+</section><section id="services">
+<h2>Nos Services</h2>
+<div class="services"><div class="card">
+<h3>Installation Wi‑Fi</h3>
+<p>Installation et extension de réseaux Wi‑Fi pour maisons, bureaux et entreprises.</p>
+</div><div class="card">
+<h3>Maintenance Informatique</h3>
+<p>Réparation d'ordinateurs, optimisation système, installation Windows et logiciels.</p>
+</div><div class="card">
+<h3>Configuration Réseau</h3>
+<p>Configuration de routeurs, Mikrotik, Ubiquiti, partage internet et sécurisation réseau.</p>
+</div><div class="card">
+<h3>Support Technique</h3>
+<p>Assistance et dépannage informatique pour particuliers et entreprises.</p>
+</div></div>
+</section><section id="about">
+<div class="about">
+<h2>À propos</h2>
+<p><strong>K‑Network Service</strong> est une entreprise spécialisée dans la maintenance informatique et réseau basée à Lomé.</p><p>Elle est dirigée par <strong>AFFO Chérif</strong>, technicien en maintenance informatique et réseau. L'objectif est d'offrir des solutions fiables pour les particuliers, entreprises et cybercafés.</p><p>Nous travaillons avec différents équipements réseau et assurons une installation professionnelle et sécurisée.</p>
+</div>
+</section><section id="contact">
+<div class="contact-box">
+<h2>Contactez‑nous</h2><p><strong>Téléphone :</strong> 71 25 53 25 <a href="tel:+22871255325">
+<button>Appeler maintenant</button>
+</a></p>
+<p><strong>Email :</strong> affocherif02@gmail.com</p>
+<iframe 
+src="https://www.google.com/maps?q=Lome&t=&z=13&ie=UTF8&iwloc=&output=embed"
+width="100%" 
+height="300" 
+style="border:0;">
+</iframe><form>
+<input type="text" placeholder="Votre nom" required>
+<input type="email" placeholder="Votre email" required>
+<textarea rows="5" placeholder="Votre message"></textarea>
+<button type="submit">Envoyer le message</button>
+</form></div>
+<h2>Avis Clients</h2>
+
+<p>⭐️⭐️⭐️⭐️⭐️  
+"Installation Wi-Fi rapide et professionnelle."  
+— Client</p>
+
+<p>⭐️⭐️⭐️⭐️⭐️  
+"Très bon technicien réseau."  
+— Entreprise</p>
+
+</section><a class="whatsapp" href="https://wa.me/22871255325" target="_blank">WhatsApp</a>
+
+<footer>
+<p>© 2026 K‑Network Service | Tous droits réservés</p>
+<p>Technicien Maintenance Informatique & Réseau</p>
+</footer>
+
+
+    <script>
+document.querySelector("form").addEventListener("submit", function(e) {
+    e.preventDefault();
+
+    let nom = document.querySelector("input[type='text']").value;
+    let email = document.querySelector("input[type='email']").value;
+    let message = document.querySelector("textarea").value;
+
+    if(nom && email && message){
+        alert("Merci " + nom + " ! Votre message a été envoyé.");
+    } else {
+        alert("Veuillez remplir tous les champs.");
+    }
+});
+</script>
+
+</body>
+</html>
